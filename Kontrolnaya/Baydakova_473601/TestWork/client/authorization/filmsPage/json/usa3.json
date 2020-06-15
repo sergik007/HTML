@@ -1,0 +1,21 @@
+{
+	"country" : "США",
+    "year": "2015 год",
+    "jenre": [{
+    	"first": "детективный фильм",
+        "second": "триллер",
+        "third" : "драма"
+    }
+],
+    "producer": "Билл Кондон",
+    "plot": "Джеффри Хэтчер",
+    "duration": "103 минут",
+    "part": "1 часть",
+    "company": "See-Saw Films & BBC Films",
+    "actors": [{
+    	"first": "Иэн Маккеллен",
+        "second": "Лора Линни",
+        "third" : "Майло Паркер"
+    }
+]
+}

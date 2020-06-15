@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ 
+<Persons><Person>
+  
+<Name>Егор</Name>
+    	
+<Adres>Маями Бич, Голд стрит, 777</Adres>
+    
+<Sex>Мужчинка</Sex>
+		
+<Post>Генеральный директор Apple</Post>
+  
+</Person>
+</Persons>

@@ -1,0 +1,50 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background: url('../resource/bg.jpg') no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-size: 18px;
+}
+.wrap {
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0, .8);
+    border-radius: 2px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    top: calc(100% - 550px);
+    position: relative;
+}
+label {
+    font-size: 16px;
+    float: left;
+}
+input {
+    width: 100%;
+    font-size: 14px;
+}
+textarea {
+    width: 100%;
+    font-size: 14px;
+}
+select {
+    min-width: 150px;
+    float: left;
+}
+#main_form {
+
+}
+
+td{
+    border: 4px dotted;
+    padding: 45px;
+    background-color:aquamarine;
+    font-size: 100%;
+    font-style: bold;
+}

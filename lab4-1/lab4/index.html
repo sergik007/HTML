@@ -1,0 +1,70 @@
+<script language="javascript" type="text/javascript">
+    function goMail() {
+      if(document.getElementById("userName").checked) document.getElementById("userName").value = "true";
+       if(document.getElementById("obslyzh").checked) document.getElementById("obslyzh").value = "true";
+       if(document.getElementById("inter").checked) document.getElementById("inter").value = "true";
+       if(document.getElementById("cena").checked) document.getElementById("cena").value = "true";
+      if(document.getElementById("userName").checked==0){
+         if(document.getElementById("obslyzh").checked==0){
+           if(document.getElementById("inter").checked==0){
+              if(document.getElementById("cena").checked==0){
+                alert("Заполните данные");
+                return 0;
+              }
+           }
+         }
+      }
+      if(document.getElementById("name").value.length==0){ 
+        alert("Введите имя");
+        return 0;
+                                                          
+                                                         }
+        if (confirm("Уверены, что хотите отправить сообщение?")) {
+            document.location = "index2.html?id=" + document.getElementById("userName").value + "$" + document.getElementById("obslyzh").value +"$" + document.getElementById("inter").value+"$" + document.getElementById("cena").value+"$" + document.getElementById("sel").value+"$" + document.getElementById("bludo").value+"$" + document.getElementById("name").value+"$" + document.getElementById("text").value;
+        }
+    }
+</script>
+<head>
+ <meta charset = "utf-8">
+  <link href="style.css" rel="stylesheet">
+</head>
+<form>
+    <p>Что вам понравилось в нашем ресторане?</p>
+  <label for="userName">Персонал
+    <input id="userName" type="checkbox" name="personal" value="false"/></label>
+  <label for="obslyzh">Обслуживание
+    <input id="obslyzh" type="checkbox" name="obslyzh" value="false" /></label>
+  <label for="inter">Интерьер
+    <input id="inter" type="checkbox" name="inter" value="false" /></label>
+  <label for="cena">Цена
+    <input id="cena" type="checkbox" name="cena" value="false" /></label>
+    <br/>
+    
+  <hr>
+  Выберите оценку для нашего заведения
+  <select id="sel">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  </select>
+  <hr>
+  Согласитесь попробовать блюда шефф повара?
+  <br>
+  <label for="bludo">да
+  <input type="radio" id="bludo" checked></label>
+  
+  <label for="bludo">нет
+  <input type="radio" id="bludo"></label>
+  <hr>
+  Введите ваше имя
+  <input type="text" id="name">
+  <hr>
+  
+  Можете внести свои пожелания
+  <textarea id ="text">Текст не введен</textarea>
+  <hr>
+  
+  <input  type ="button" value="Отправить сообщение" onclick="goMail()"  id="knopka"/>
+</form>

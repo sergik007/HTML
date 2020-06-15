@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sherlock Holmes</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script data-main="./js/config.js" src="./js/require.js"></script>
+    <link rel="shortcut icon" href="./resources/images/icon.png">  
+</head>
+<body>  
+<h1 text-align="center"><b><em>Знаменитые фильмы</em></b></h1>
+  <form >
+  <div class="pos">
+    <p><input class="btn" id="russia" type="button" value="Шерлок Холмс (Россия)" > </p>
+    <p><input id="usa1" type="button" value="Шерлок Холмс (США, 1)" class="btn"> </p>
+    <p><input id="usa2" type="button" value="Шерлок Холмс (США, 2)" class="btn"> </p>
+    <p><input id="usa3" type="button" value="Мистер Холмс" class="btn"> </p>
+    <p><input id="back" type="button" value="Назад" class="btn"> </p>
+    </div>
+  </form>
+<div id="pos1">  
+  <h2 id="center"></h2><br>
+  <div class="txt"><table id="inform" align="center"></table><br></div>
+  <div id="textHtml"></div>
+
+  <div id="loading" style="display: none">
+  Идет загрузка...
+  </div><br>
+<h3 id="text"></h3>
+</div>
+</body>
+<script src="./js/script.js"></script>
+</html>

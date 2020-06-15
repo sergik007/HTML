@@ -1,0 +1,107 @@
+@import url(http://allfont.ru/css/?fonts=avantgardectt);
+body{
+display: block;
+min-height: 100%;
+background: url(1.jpg);
+margin: 0;
+}
+div#block {
+	display:block;
+	margin: 2px auto;
+	color: #BF1FE6
+}
+.h1 {
+display:block;
+margin: 0px auto;
+position:relative;
+text-align: left;
+color: #3FD0C4;
+}
+
+
+
+form, #main {
+
+	display: block;
+	position: relative;
+	width: 700px;
+	background-color: #F2B3D8;
+	border-radius: 7px;
+	border: 0px solid #2FC7BB; 
+	box-shadow:  0 0px 5px #6EB4E4;
+	-moz-box-shadow: 0 0 5px #bde4ff;
+	padding:10px;
+	margin:10px auto 5px;
+	font-family: 'AvantGardeCTT', arial;
+	text-align: center;
+
+}
+input, select {
+	display: block;
+    width:  205px;
+	height: 30px;
+    padding: 5px 10px 5px 10px;
+    border:1px solid  white;
+	border-radius:5px;
+	border: 1px solid ;
+	box-shadow:  0 0px 7px gray inset;
+	-moz-box-shadow: 0 0 7px gray;
+    font-size:15px;
+    font-family: Arial;
+	margin: 3px auto;
+}
+select {
+    height: 100%; 
+	padding: 0 10px 0 10px;;
+}
+select:focus, input:focus{
+outline:none;
+}
+input.button {
+    width:  250px;
+    height: 30px;
+	background-color:  #86C9F4;
+	font-family: 'AvantGardeCTT', arial;
+	font-weight: bold;
+	color: #1D1C19;
+	font-size: 1em;
+	margin: 15px auto 5px;
+}
+input.button:hover {
+	background-color: #ADB4B8;
+}
+
+
+.normal {
+	font-weight: normal;
+	color: #620D5B;
+}
+
+.modal--shown .modal {
+	display: block;
+}
+
+.modal {
+	width: 900px;	
+	height: 500px;
+	top: 100px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);	
+	display: none;
+	background: url(1.jpg);
+}
+
+.modal-wrapper.modal--shown {
+	width: 100%;
+	height: 1200px;
+	top: 0;
+	position: absolute;
+	background: rgba(100, 100, 100, 0.5)
+}
+
+.modal-table {
+	width: 100%;
+	color: white;
+	text-align: center;
+}

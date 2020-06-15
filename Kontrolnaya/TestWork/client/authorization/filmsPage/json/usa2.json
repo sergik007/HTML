@@ -1,0 +1,21 @@
+{
+	"country" : "США",
+    "year": "1995",
+    "jenre": [{
+        "first": "детектив",
+        "second": "комиксы",
+        "third" : "драма"
+    }
+],
+    "producer": "Тим Бёртон",
+    "plot": "Вэл Килмер",
+    "duration": "1 час",
+    "part": "1 часть",
+    "company": "Warner Bros.",
+    "actors": [{
+    	"first": "Бэзил Рэтбоун",
+        "second": "Найджел Брюс",
+        "third" : "Чарльз Ван Энгер"
+    }
+]
+}

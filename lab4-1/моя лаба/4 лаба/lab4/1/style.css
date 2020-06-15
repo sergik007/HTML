@@ -1,0 +1,17 @@
+body {
+	background-image: url(res/fon.jpg);
+	background-size: 100%;
+}
+
+#main {
+	width: 700px;
+	padding: 10px 40px;
+	margin: 10px auto;
+	background: gray;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 10px;
+}
+
+.but {
+	width: 100px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sherlock Holmes</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="../resources/images/icon.png"> 
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script> 
+    <script type="text/javascript" src="./js/index.js"></script>
+    
+</head>
+<body>
+<script type="text/javascript"> 
+  function look(t){
+  p=document.getElementById(t);
+  l=document.getElementById("a-"+t);
+  if(p.style.display=="none"){
+    l.innerHTML="Свернуть";
+    p.style.display="block";}
+  else{
+    l.innerHTML="Показать текст";
+    p.style.display="none";}
+}
+var showingTooltip;
+
+    document.onmouseover = function(e) {
+      var target = e.target;
+
+      var tooltip = target.getAttribute('data-tooltip');
+      if (!tooltip) return;
+
+      var tooltipElem = document.createElement('div');
+      tooltipElem.className = 'tooltip';
+      tooltipElem.innerHTML = tooltip;
+      document.body.appendChild(tooltipElem);
+
+      var coords = target.getBoundingClientRect();
+
+      var left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
+      if (left < 0) left = 0; // не вылезать за левую границу окна
+
+      var top = coords.top - tooltipElem.offsetHeight - 5;
+      if (top < 0) { // не вылезать за верхнюю границу окна
+        top = coords.top + target.offsetHeight + 5;
+      }
+
+      tooltipElem.style.left = left + 'px';
+      tooltipElem.style.top = top + 'px';
+
+      showingTooltip = tooltipElem;
+    };
+
+    document.onmouseout = function(e) {
+
+      if (showingTooltip) {
+        document.body.removeChild(showingTooltip);
+        showingTooltip = null;
+      }
+
+    };
+</script>
+<form>
+<h1>История создания персонажа "Шерлок Холмс"</h1>
+  <div class="slider">
+    <ul>
+      <li><img src="./resources/images/1.jpg" data-tooltip="Артур Конан Дойль" alt="Артур Конан Дойль"></li>
+      <li><img src="./resources/images/2.jpg" data-tooltip="Зарисовка из книги" alt="Зарисовка из книги"></li>
+      <li><img src="./resources/images/3.jpg" data-tooltip="Книга" alt="Книга"></li>
+      <li><img src="./resources/images/4.jpg" data-tooltip="Марка" alt="Марка"></li>
+      <li><img src="./resources/images/5.jpg" data-tooltip="Актёр в роли Шерлока" alt="Советский Шерлок"></li>
+    </ul>
+  </div>
+    <div class="container"><br><br>
+    <div id="text1" style="display:none; text-align:justify; transition: all 3s;">
+      <p>Рассказы и повести Артура Конан Дойля.</p>
+<p>Среди произведений Конан Дойля о Шерлоке Холмсе насчитывается 56 рассказов и 4 повести. Практически все произведения написаны от лица верного спутника, друга и компаньона Холмса – доктора Уотсона (в России, ввиду лингвистических особенностей его чаще называют доктором Ватсоном).</p><p>
+Первая книга о великом сыщике была написана в 1887 году. Это была повесть «Этюд в багровых тонах». Сэр Артур считал произведения о Холмсе легким, развлекательным чтивом, и в первую очередь позиционировал себя мастером исторического романа. Видя, что читатели предпочитают произведения о Шерлоке другим его трудам, Конан Дойл устранил популярнейшего сыщика в бою с профессором Мориарти. Однако волна писем от недовольных читателей буквально захлестнула писателя. В этих письмах, среди которых встречались и письма членов королевской семьи, содержалась только одна просьба – «оживить» Шерлока Холмса, что Конан Дойл и был вынужден сделать. Последним же произведением про знаменитого сыщика стал вышедший в 1927 году сборник под названием «Архив Шерлока Холмса». Таким образом, период Шерлока Холмса занял в литературном творчестве сэра Артура Конан Дойла ни много ни мало 40 лет.</p>
+      </div><a href="javascript:look('text1');" id="a-text1">Показать текст</a><br><br><br>
+  
+    	<input type="button" value="Назад" onClick='location.href="http://localhost:3002/mainPage/"'>
+    </div>
+    <br>
+</form>
+
+</body>
+
+</html>

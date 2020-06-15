@@ -1,0 +1,115 @@
+﻿.disney {
+    top: 8%;
+    font-size: 50px;
+    text-align: left;
+    position: fixed;
+}
+.disneyFixed {
+    top: 6%;
+    font-size: 60px;
+    text-align: left;
+    position: fixed;
+}
+.upper_bg {
+    left: 0.5%;
+    top: 3%;
+    width:43%;
+    height:50%;
+    border-right:60px solid transparent; /* правый наклон стрелки */
+    border-top:180px solid azure; /* низ, указываем цвет стрелки */
+    position: absolute;
+
+    z-index: -10;
+}
+ @font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(disn.ttf); 
+   }
+   h1 {
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+    color:red;
+   }
+body {
+    margin-top: 2%;
+    border: 15px solid azure;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 30px;
+    outline: 50px solid azure;
+    outline-offset: -12px;
+    background-image: url("80131.jpg"); /* Путь к фоновому рисунку */
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Повторяем фон по горизонтали */
+    background-size: auto;
+}
+#header{
+    font-family: DisneyPark;
+    font-size: x-large;
+    background: gainsboro;
+    float: left;
+}
+.images {
+    width: 100px;
+    height: 100px;
+  
+}
+
+table {
+    margin-top: 20%;
+    margin-left: 10%;
+    color: darkblue;
+    width: 80%;
+    border-collapse: collapse;
+    outline: 7px solid gainsboro;
+    outline-offset: -6px;
+    border: 7px solid gainsboro;
+    border-spacing: 10px;
+    -webkit-border-bottom-left-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    background: gainsboro;
+    padding: 10px;
+
+}
+td {
+    font-size: large;
+    padding: 10px; /* Поля вокруг содержимого таблицы */
+    border: 3px solid gainsboro;
+    font-family:  cursive;
+}
+td:hover {
+    background-color: antiquewhite;
+    color:red;
+}
+.gradient {
+    background: azure;
+    background: linear-gradient(to top left, powderblue, pink);
+
+}
+
+#row1 {
+    width: 10%;
+}
+#row2{
+    width: 90%;
+}
+
+#blink1 {
+    position: absolute;
+    bottom: -600px;
+    margin-left: 25%;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+    font-size: 80px;
+    -webkit-animation: blink1 2s  ;
+    animation: blink1 3s  ;
+    
+}
+@-webkit-keyframes blink1 {
+    0% {
+        color: rgba(34, 34, 34, 1);
+    }
+    50% {
+        color: rgba(34, 34, 0, 0);
+    }
+    100% {
+        color: rgba(34, 34, 34, 1);
+    }
+}

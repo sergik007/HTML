@@ -1,0 +1,11 @@
+{
+	"university": "BSUIR",
+	"adress": [
+      {
+        "first": "P.Brovki,6",
+        "second": "220013",
+        "third": "kanc@bsuir.by"
+      }
+  ],
+	"starosta": "Borkovskaya"
+}

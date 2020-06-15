@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Batman</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+</head>
+<body onload="setFocus();">
+<form name="myForm" action="/check" method="post" onclick="clearForm()">
+
+  <h1>Пожалуйста, авторизируйтесь!</h1>
+    <div class="containe">
+    	<br><p>Логин: </p><input  type="text" name="login" id="login" placeholder="Username..." onblur="setFocus();">
+      <p>Пароль:</p> <input  type="text" name="password" id="password" placeholder="Password..." onblur="setFocus();">
+      <p><br><input type="checkbox" name="new" id="new">Новый пользователь<br><br></p>
+      <input type="submit" value="Войти" class="button" onclick="validate_form();">
+      <button  class="button" type="reset" onclick="clearForm()">Очистить</button></div>
+    </div>
+    <br>
+    </form>
+</body>
+</html>

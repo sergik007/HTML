@@ -1,0 +1,54 @@
+body {
+  background-image: url(../resource/background.jpg);
+  background-size: 100vw;
+  background-position: 0 -10vh;
+	background-attachment: fixed; 
+  color: white; 
+	margin: 0; 
+	text-align: center;
+	font-family: abeezee;}
+
+@font-face {
+    font-family: abeezee; /* Гарнитура шрифта */
+    src: url(../resource/fonts/abeezee.ttf); /* Путь к файлу со шрифтом */
+   }
+
+::selection {
+background: black;
+color: white;
+}
+
+td{
+  width: 10vh;
+  color: white; 
+  border: 0.5vh solid white;
+  padding: 2vh;
+}
+
+table{
+border: 0.5vh solid white;
+border-collapse: collapse;
+margin:10vh;
+margin-left: auto;
+margin-right: auto;
+}
+
+tr:first-child{
+  background-color: rgba(151,166,222,0.5);
+}
+
+input,textarea,select{
+  background-color: white;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+input:focus, textarea:focus,select:focus
+{
+  background-color: #C9D1EE;
+}
+
+ol,li{
+  position: left;
+}
+

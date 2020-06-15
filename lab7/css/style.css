@@ -1,0 +1,118 @@
+body {
+  background-image: url(../resource/Power_Rangers_Zeo.png);
+  background-size: 100vw;
+  background-position: 0 -10vh;
+	background-attachment: fixed; 
+  color: white; 
+	margin: 0;   
+	text-align: center;
+	font-family: body;}
+
+
+form{
+   width: 40%;
+   padding-left: 30%;
+   padding-right: 30%;   
+   color: white;
+   text-shadow: 0 0 1vh black;
+}
+
+@font-face {
+    font-family: body; /* Гарнитура шрифта */
+    src: url(../resource/fonts/HelveticaNeueCyr-Medium.otf); /* Путь к файлу со шрифтом */
+   }
+
+::selection {
+background: black;
+color: white;
+}
+
+input,textarea,select,button{
+  
+  background-color: white;  
+  transition: 0.5s;
+  font-family: body;
+
+}
+
+input:focus, textarea:focus,select:focus,button:focus
+{
+  background-color: #C9D1EE;
+}
+
+select{margin-top: 3vh;  
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(../resource/select/arrow.png), -webkit-linear-gradient(#18545f, #216e7c 40%, #288394);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #040f18;
+   color: white;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 15vw;
+}
+
+select:focus{border: 1px solid black;}
+
+input{margin-top: 3vh;  
+   -webkit-appearance: button;
+   -webkit-border-radius: 0px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image:-webkit-linear-gradient(#18545f, #216e7c 40%, #288394);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #040f18;
+   color: white;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 15vw;
+}
+
+table{
+  border: 3px solid black;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;    
+  color: white;
+  text-shadow: 0 0 1vh black;
+}
+
+td{
+  width: 10vh;
+  color: white; 
+  border: 0.5vh solid white;
+  padding: 2vh;
+}
+
+table{
+border: 0.5vh solid white;
+border-collapse: collapse;
+margin:10vh;
+margin-left: auto;
+margin-right: auto;
+}
+
+tr{
+  background-color: rgba(55,70,124,0.8);
+}
+
+tr:first-child{
+  background-color: rgba(151,166,222,0.8);
+}
+

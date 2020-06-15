@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Лабораторная работа 4</title>
+<link href="../css/style.css" media="all" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../resource/script.js"></script>
+</head>
+<body>
+<script>
+</script>
+<div class="wrap">
+    <form id="main_form">
+        <h1>Information about notebook</h1><br>
+        <label>Enter you name:</label><br>
+        <input type="text" required id="uname"/><br><br>
+        <label>Enter some information about notebook:</label><br>
+        <textarea id="some_info" required></textarea><br><br>
+        <label>Enter email:</label>
+        <input type="email" id="mail" required><br><br>
+        <label>Select operation system:</label>
+        <select size="3" name="hero" id="operation">
+            <option value="windows" selected>Windows</option>
+            <option value="linux">Linux</option>
+            <option value="mac">Mac OS</option>
+        </select><br><br><br><br><br>
+        <label>Agree with terms:</label>
+        <input type="checkbox" name="option2" checked id="terms"><br><br>
+        <label>Send answer:</label>
+        <input type="radio" checked id="answer"><br><br>
+         <input  type ="button" value="Send" onclick="goMail()" />
+    </form>
+</div>
+</body>
+</html>

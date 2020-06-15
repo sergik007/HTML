@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Лабораторная работа №4 – САиПИС (с РВР)</title>
+		
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	<body>
+        <center>
+        <h1>Опрос по теме</h1>
+		<h2>Сериалы</h2>
+		<form>
+			<fieldset class="form- form-1">
+				<legend>Вопрос 1</legend>
+				<input type="checkbox" id="a1" value="av1"> вариант 1<br>
+				<input type="checkbox" id="a2" value="av2"> вариант 2<br>
+				<input type="checkbox" id="a3" value="av3"> вариант 3<br>
+			</fieldset>
+			
+			<fieldset class="form- form-2">
+				<legend>Вопрос 2</legend>
+				<input type="radio" name="q2" id="b1" value="bv1"> вариант 1<br>
+				<input type="radio" name="q2" id="b2" value="bv2"> вариант 2<br>
+				<input type="radio" name="q2" id="b3" value="bv3"> вариант 3<br>
+			</fieldset>
+			
+			<fieldset class="form- form-3">
+				<legend>Вопрос 3</legend>
+				<select size="1" name="q3">
+					<optgroup label="Варианты">
+						<option id="c1" value="cv1" selected> вариант 1</option>
+						<option id="c2" value="cv2"> вариант 2</option>
+						<option id="c3" value="cv3"> вариант 3</option>
+					</optgroup>
+				</select>
+			</fieldset>
+			
+			<fieldset class="form- form-4">
+				<legend>Ваше ФИО</legend>
+				<input class="text-1" id="fio" type="text" size="40" >
+  			</fieldset>
+			
+			<fieldset class="form- form-5">
+				<legend>Комментарии</legend>
+				<textarea id="comm"rows="2" cols="30" name="text"></textarea>
+			</fieldset>
+			<input id="knop" type="button" value="sad"/>
+		</form>
+		</center>
+		<script src="script1.js"></script>
+
+	</body>
+</html>

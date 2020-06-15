@@ -1,0 +1,89 @@
+html
+{
+	height: 100%;
+}
+
+h1
+{
+	color: #000;
+	font-size: 20px;
+}
+
+h2
+{
+	color: #CCC;
+	font-size: 30px;
+}
+
+body
+{
+	background-image: url(../images/bg.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.text-1
+{
+	width: 200px;
+	color: #c1c1c1;
+	height: : 100px;
+}
+
+.figur
+{
+	position: absolute;
+}
+
+.form-
+{
+	border: none;
+	border-width: medium;
+	padding: 15px;
+	margin: 10px;
+	width: 100px;
+	color: #484848;
+	font-size: 12px;
+}
+
+.form-1
+{
+	background-color: rgba(205,226,222,1);
+}
+
+.form-2
+{
+	background-color: rgba(197,217,213,1);
+}
+
+.form-3
+{
+	background-color: rgba(180,203,199,1);
+}
+
+.form-4
+{
+	background-color: rgba(159,187,182,1);
+}
+
+.form-5
+{
+	background-color: rgba(66,111,102,0.5);
+}
+
+table
+{
+	width: 45%;
+	margin: auto;
+	border-color: white;
+	border: 1px dotted white;
+	border-collapse: collapse;
+}
+
+tr,
+td,
+th
+{
+	border: 1px dotted white;
+}

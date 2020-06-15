@@ -1,0 +1,124 @@
+body {
+    width: 100%;
+    background-color: rgba(205, 201, 201, 1);
+}
+
+#topleft {
+    margin-left: 2%;
+    z-index: 2;
+    position: relative;
+    width: 100px;
+    height: 0;
+    border-top: 30px solid #F4A460;
+    -webkit-border-top-left-radius: 10px; /* Радиус скругления */
+    -webkit-border-top-right-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#fon{
+
+    position: relative;
+    z-index: 1;
+    margin-left: 2%;
+    width: 95%;
+    height: 1050px; /* Размеры */
+    background-image: url(../resources/images/1.jpeg);
+    border-radius: 0px 10px 10px 10px; /* Уголки */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+footer {
+    margin-left: 2%;
+    width: 100%;
+}
+
+#foot{
+    width: 100%;
+    position: relative;
+    border: 4px double black;
+}
+
+.london {
+    position: relative;
+    left: 10px;
+    top: -45px;
+    color: #000000;
+}
+
+.pic{
+    width: 94.5%;
+    height: 90px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;   
+    border: 5px solid #A9F5E1;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+img.pic1:hover, img.pic2:hover, img.pic3:hover, img.pic4:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.pic1{
+    width: 200px;
+    height: 150px;
+    position: relative;
+    left: 5%;
+    top: 20px;	
+}
+
+.pic2{
+    width: 200px;
+    height: 150px;
+    position: relative;
+    left: 15%;
+    top: 20px;	
+}
+
+.pic3{
+    width: 200px;
+    height: 150px;
+    position: relative;
+    left: 25%;
+    top: 20px;	
+}
+
+.pic4{
+    width: 200px;
+    height: 150px;
+    position: relative;
+    left: 30%;
+    top: 20px;  
+}
+
+table {
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: rgba(205, 201, 201, 0.4);
+        width: 90%; 
+        height: 100px;
+        position: relative;
+        z-index: 1;
+        border-collapse: collapse;
+    }
+    td, th {
+        text-align: center;
+        padding: 3px; 
+        border: 1px solid #000; 
+    }
+    th {
+        background: #E4F1DA; 
+        color: #333; 
+    }
+    tbody tr:hover {
+        background: yellow;
+        color: green;
+    }

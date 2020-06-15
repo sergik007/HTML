@@ -1,0 +1,21 @@
+{
+    "country" : "США",
+    "year": "1992",
+    "jenre": [{
+        "first": "детектив",
+        "second": "фантастика",
+        "third" : "комедия"
+    }
+],
+    "producer": "Бойд Кирклэнд",
+    "plot": "нет",
+    "duration": "85 серий",
+    "part": "мультсериал",
+    "company": "Warner Bros. Pictures",
+    "actors": [{
+    	"first": "Роберт Дауни-мл.",
+        "second": "Джуд Лоу",
+        "third" : "Рэйчел Макадамс"
+    }
+]
+}

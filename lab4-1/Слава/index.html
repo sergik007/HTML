@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee preferences</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/jquery-3.1.0.min.js"></script>
+
+        <script src="scripts/script.js"></script>
+    </head> 
+    <body>
+        <h2>Show your coffee preferences</h2>
+        <form name="preferences" id="preferences" action="#" method="POST">
+            <table id="mainTable">
+
+                <tr>
+                    <th>Выберите кофе:</th>
+                    <td>
+                        <fieldset>
+                            <legend>Тип кофе</legend>
+                            <select name="beans">
+                                <option value="Смесь">Домашняя смесь</option>
+                                <option value="Боливия">Боливия</option>
+                                <option value="Гватемала">Гватемала</option>
+                                <option value="Кения">Кения</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Тип:</th>
+                    <td>
+                        <input type="radio" name="beantype" value="зерна" id="zerna" checked="checked" />
+                        <label for="zerna">Кофе в зернах</label>
+
+                        <input type="radio" name="beantype" value="молотый" id="mol" />
+                        <label for="mol">Молотый кофе</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Дополнительные услуги:</th>
+                    <td>
+                        <input type="checkbox" name="extras[]" value="упаковка" /> Подарочная упаковка <br />
+                        <input type="checkbox" name="extras[]" value="каталог" checked="checked" />Доставка каталога вместе с заказом
+                        <span class="error-box"></span>
+                    </td>
+    	        </tr>
+
+                <tr>
+    		        <th>Доставить по адресу:</th>
+                    <td>
+                        <fieldset>
+                                <legend>Контактная информация</legend>
+                                <table>
+                                    <tr>
+                                        <td>Имя:</td>
+                                        <td class="value">
+                                            <input type="text" name="name" id="name" placeholder="Ваше имя" size="25" required/><span class="error-box"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пароль:</td>
+                                        <td class="value">
+                                            <input type="password" name="password" id="password" placeholder="Ваш пароль" size="25" required/><span class="error-box"></span>
+                                        </td>
+                                    </tr>
+                                    <td>Адрес:</td>
+                                        <td class="value">
+                                            <input type="text" name="address" id="address" placeholder="Ваш адресс" size="25" required /><span class="error-box"></span>
+                                        </td>
+                                    </tr>
+                                    <td>Телефон:</td>
+                                        <td class="value">
+                                            <input type="tel" name="phone" id="phone" placeholder="(+375|80)xx xxx xx xx" title="Формат ввода +375 (xx) xxx-xx-xx" size="25" required /><span class="error-box"></span>
+                                        </td>
+                                    </tr>
+                                    <td>Email:</td>
+                                        <td class="value">
+                                            <input type="email" name="email" id="email" placeholder="email" size="25" required /><span class="error-box"></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </fieldset>
+                        
+                    </td>
+    	        </tr>
+
+                <tr>
+                    <th>Комментарии клиентов: </th>
+                    <td>
+                        <textarea name="comments" id="comments" row="12" cols="48" required></textarea><span class="error-box"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        
+                    </th>
+                    <td>
+                        <input type="submit" value="Сделать заказ" />      
+                        <input type="reset" value="Очистить поля" />             
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <a href="result.html" target="_blank">Просмотреть данные</a>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+        
+        
+    </body>
+</html>

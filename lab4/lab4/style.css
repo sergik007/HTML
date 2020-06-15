@@ -1,0 +1,44 @@
+option {
+text-align: left;
+  height: 100px;
+}
+
+body{
+ background-image: url(chick.jpg);
+  color: black;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+form{
+  background-color:yellow;
+}
+table{
+  background-color: aquamarine;
+  margin: auto;
+}
+td{
+  padding: 40px;
+  border: 5px double red;
+  background-color: chartreuse;
+  color:blue;
+}
+
+text{
+  background-color: white;
+  color: black;
+}
+
+#knopka{
+  width: 200px;
+  height: 150px;
+  background-color: red;
+  border: 2px solid green;
+  color: yellow;
+  border-radius: 50%;
+}
+
+#header td{
+  background-color: fuchsia;
+  border-radius: 10px;
+}

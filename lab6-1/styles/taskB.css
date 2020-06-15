@@ -1,0 +1,18 @@
+div#main{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+div#radio{
+    margin-top:1%;
+    margin-bottom: 2%;
+}
+
+input{
+    margin-top: 3%;
+}
+
+span{
+    color: deeppink;
+    opacity: 0;
+}

@@ -1,0 +1,21 @@
+{
+	"country" : "США",
+    "year": "1989",
+    "jenre": [{
+        "first": "фантастика",
+        "second": "триллер",
+        "third" : "комедия"
+    }
+],
+    "producer": "Тим Бёртон",
+    "plot": "Майкл Китон",
+    "duration": "1 час",
+    "part": "Полный фильм",
+    "company": "PolyGram Filmed Entertainment",
+    "actors": [{
+    	"first": "Василий Ливанов",
+        "second": "Виталий Соломин",
+        "third" : "Рина Зелёная"
+    }
+]
+}

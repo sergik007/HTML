@@ -1,0 +1,47 @@
+body{
+  background-image: url(q3.jpg);
+width: 99%;
+}
+
+#first{
+  background-color: white;
+  height: 400px;
+width: 33%:
+}
+
+#second{
+background-color: green;
+    height: 400px;
+width: 33%:
+}
+
+#thirt{
+  background-color: white;
+   height: 400px;
+width: 33%:
+}
+
+div{
+float:left;
+width: 27%;
+margin-left:3%;
+margin-right:2%;
+opacity: 0.5;
+border: 2px dotted;
+padding:5px;
+}
+
+#kar1{
+ display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+margin: auto;
+padding-top: 10%;
+}
+
+button{
+width: 35%;
+height: 30px;
+margin: 5%;
+background-color: rgb(46, 186, 232);
+opacity: 0.5;
+}

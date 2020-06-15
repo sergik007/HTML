@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+ <html>
+  <head>
+  	<LINK rel="stylesheet" type="text/css" href = "styles.css">
+  <meta charset="utf-8">
+    <title>Выставка смартфонов</title>
+ </head>
+ <body>
+ 
+    
+  <form class ="form_txt" name="auto" id="auto"  action="window.html">
+  <div id = "block">
+  <b>Ваше имя и фамилия</b><br>
+<input class="text" type=text name="fio" id = "fio" size=37 maxlength=100><br><br>
+</div>
+<div id = "block">
+  <b>Введите ваш пароль для анкеты</b><br>
+  <input class="text" type="password" name="pass"><br><br>
+  </div>
+  <div id = "block">
+  <b>Что вам по душе?</b><br></div>
+
+<select name="type" size="4">
+<option selected value="Apple">Apple
+<option value="Samsung">Samsung
+<option value="Nokia">Nokia
+<option value="Huawei">Huawei
+<option value="other">other
+</select><br><br>
+
+
+<div id = "block">
+<b>Предпочитаемые дни для посещений выставки:</b><br></div>
+<select name="chose" size="4">
+<option selected value="Понедельник">Понедельник
+<option value="Вторник">Вторник
+<option value="Среда">Среда
+<option value="Четверг">Четверг
+<option value="Пятница">Пятница
+</select><br><br>
+<div id = "block">
+<b>Что для вас главное в смартфоне?</b><br></div>
+<select name="main">
+<option value="speed">Скорость работы
+<option value="comfort">Комфорт
+<option value="safety">Безопасность
+<option value="functionality">Функциональность
+<option value="cost">Стоимость
+</select><br><br>
+<div id = "block">
+<b>Ваши коментарии(пожелания):</b><br></div>
+<textarea name="dream">
+</textarea><br><br>
+<div id = "block">
+<b>Ваш пол:</b>
+</div>
+Мужчина<input type=radio name="sex" value="man" checked> Женщина<input type=radio name="sex" value="women"><br><br>
+
+
+
+<br>
+<div id = "block">
+<b>Ваш е-майл:</b><br>
+<input class="text" type=text name="email" size=37 maxlength=80 value="@"><br><br>
+</div>
+<div id = "block">
+<input class="button" type="submit" name ="Send" value="Отправить введенные данные">
+</div>
+<div id = "block">
+<input class="button" type="reset" value="Очистить поля">
+</div>
+<div id = "block">
+<input class="button" type="button" name="close2" value="Закрыть окно">
+</div>
+
+</form>
+
+
+<div class="modal-wrapper">
+  <div class="modal">
+    <table class="modal-table">
+      <tr>
+        <th data-target="fio">Фамилия</th>
+        <th data-target="pass">Пароль</th>
+        <th data-target="type">Пожелание</th>
+        <th data-target="chose">День</th>
+        <th data-target="main">Главное</th>
+        <th data-target="dream">Комментарий</th>
+        <th data-target="sex"> Пол</th>
+        <th data-target="email"> Емэйл</th>
+      </tr>
+
+      <!-- <tr>
+        <td data-target="fio"> </td>
+        <td data-target="pass"> </td>
+        <td data-target="type"> </td>
+        <td data-target="chose"> </td>
+        <td data-target="main"> </td>
+        <td data-target="dream"> </td>
+        <td data-target="sex">  </td>
+        <td data-target="email">  </td>
+      </tr> -->
+    </table>
+  </div>
+</div>
+
+<script type="text/JavaScript" src="jquery.js"></script> 
+<script type="text/JavaScript" src="myFunc.js"></script>
+
+ </body>
+</html>

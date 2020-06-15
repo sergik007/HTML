@@ -1,0 +1,62 @@
+<head>
+  <meta charset="UTF-8">
+  <title>ЛР 7 | Главная</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/modal.css">
+  <script src="../js/handlebars.js"></script>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/handlebars.js"></script>
+  <script src="../js/template.js"></script>
+  <script type="text/javascript">
+    db = openDatabase("SweetDB", "0.1", "A list of Ooo warriors", 200000);
+    reSelect();
+  </script>
+</head>
+<body>
+<form>
+<input type="text" id="name" placeholder="ТЕХНИКА"></input><br>
+<input type="text" id="age" placeholder="ПРОИЗВОДИТЕЛЬ"></input><br>
+<input type="text" id="type" placeholder="КОЛИЧЕСТВО"></input><br>
+<input type="text" id="sweetType" placeholder="ЦЕНА"></input><br>
+
+<select id="selectId"></select><br>
+
+<input type="button" value="ДОБАВИТЬ" onclick="addRecord();"></input>
+<input type="reset" value="ОЧИСТКА" ></input><br>
+<input type="button" value="УДАЛЕНИЕ" onclick="deleteRecord($('#selectId').val());"></input>
+<input type="button" id="showrec" value="ЗАПИСИ" onclick="showRecords();"></input>
+</form>
+<table id="showTable"></table>
+
+<input type="text" id="query"></input>
+<br>
+<input type="button" value="Найти в ЗАПИСЯХ" onclick="showPrompt();"></input>
+
+<div id="prompt-form-container">
+    <form id="prompt-form">
+    <div id="nameList">
+  </div>
+      
+      <input type="button" id="cancel" value="Закрыть">
+    </form>
+  </div>
+ 
+  <!-- RENDER TEMPLATE AFTER EVERYTHING ELSE LOADED -->
+  <script src="../js/animalList.js"></script>
+
+<script id="Template" type="text/x-handlebars-template" src="../js/template.js">
+    {{#if sweets}}
+      <ul>
+        {{#each sweets}} 
+          <li class="sweetsName">{{name}}</li>
+        {{/each}} 
+      </ul>
+    {{else}}
+      <p>НЕТ ДАННЫх(</p>
+    {{/if}}
+  </script>
+
+</body>
+</html>

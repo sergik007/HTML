@@ -1,0 +1,51 @@
+.main_header {
+    text-align: center;
+    color: purple;
+}
+#table{
+    width: 1300px; 
+    height: 400px;
+    margin:  auto;
+    border: 20px double orange;
+    border-radius: 50px;
+}
+img {
+    width: 250px;
+    margin: 5px;
+}
+td{
+    margin 10px;
+    background: #ccffcc;
+    border-radius:5px;
+    padding: 10px;
+    text-align: left;
+}
+li {
+    text-align: left;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 18px;
+}
+.h_text {
+    background:#34cb34;
+    color:white;
+}
+.text1{
+    font-style:italic;
+    color:	#FF0000;
+}
+.text2{
+    font-weight:bold;
+}
+.text3{
+    color:blue;
+    font-weight:800;
+}
+.text4{
+    color:rgb(219, 37, 165);
+    text-decoration: underline;
+}
+.text5{
+    color:orangered;
+    font-weight: bold;
+    font-style:italic;
+}

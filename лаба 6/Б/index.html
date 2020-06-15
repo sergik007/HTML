@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <script src="jquery-3.1.0.min.js"></script>
+ <script src="jquery-1.11.2.min.js"></script>
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+</head>
+
+  <body>
+	  
+
+      <h1>Информация о сотруднике:</h1>
+<form id="form" onsubmit="return false;">
+   <input type="text" id="name" size="25" placeholder="Имя...">  
+   <input type="text" id="adres" size="25" placeholder="Адрес...">  
+   <input type="text" id="sex" size="25" placeholder="Пол...">  
+   <input type="text" id="post" size="25" placeholder="Должность...">  
+
+   <button id="button1">XML</button>
+   <button id="button2">Рисуночек</button>
+   <button id="button3">Очистить</button>
+   <button id="button4">Показать</button>
+</form>
+      
+<div id="modal_form">
+      <span id="modal_close">X</span>
+      <p>Имя: <span id="modalName"></span></p>
+      <p>Адрес: <span id="modalAdres"></span></p>
+      <p>Пол: <span id="modalSex"></span></p>
+      <p>Должность: <span id="modalPost"></span></p>
+</div>
+
+<div id="overlay"></div>
+	  <div id = "task"></div>
+<div id="imagn"></div>
+</body>
+</html>

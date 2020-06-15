@@ -1,0 +1,73 @@
+<head>
+    <title></title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+    <script language="javascript" type="text/javascript">
+
+        function OnLoad() {
+            var paramValue = window.location.href.split("?")[1].split("=")[1].split("$");/*
+          localStorage.setItem("mas2",paramValue);*/
+          console.log(localStorage["mas2"]);
+          var paramValue2 = localStorage["mas2"].split(",");
+          console.log(paramValue2[0]);
+          /*alert(document.cookie);*/
+          document.getElementById("1").innerHTML = '<p>' +   paramValue[0] + '</p>';
+          document.getElementById("2").innerHTML = '<p>' +  paramValue[1] + '</p>';
+          document.getElementById("3").innerHTML = '<p>' + paramValue[2] + '</p>';
+          document.getElementById("4").innerHTML = '<p>' + paramValue[3] + '</p>';
+          document.getElementById("5").innerHTML = '<p>' + paramValue[4] + '</p>';
+          document.getElementById("6").innerHTML = '<p>' + paramValue[5] + '</p>';
+          document.getElementById("7").innerHTML = '<p>' + paramValue[6] + '</p>';
+          document.getElementById("8").innerHTML = '<p>' + paramValue[7] + '</p>';
+          
+                    console.log(paramValue);
+        }
+    </script>
+</head>
+<body onload="OnLoad()">
+  <span id="storageElement"></span>
+
+    <font id="UsName">
+    
+    </font>
+  
+  <font id="myName">
+  </font>
+  <table>
+<tr id="header"><td>Персонал</td>
+    <td>Обслуживание</td>
+    <td>Интерьер</td>
+    <td>Цена</td>
+   <td>Оценка</td>
+     <td>Блюдо повора</td>
+ <!-- <tr><td>Блюдо повора<text  id="6"></text></td><td id="7"></td></tr>-->
+    <td>Имя</td>
+    <td>Пожелания</td>
+    </tr>
+    
+    
+    
+    <tr><td id="1"></td>
+    <td id="2"></td>
+    <td id="3"></td>
+    <td id="4"></td>
+   <td id="5"></td>
+     <td id="6"></td>
+    <td id="7"></td>
+    <td id="8"></td></tr>
+    
+      
+   </table>
+  
+   <!-- <table>
+
+    <tr><td>Персонал</td><td id="11"></td></tr>
+    <tr><td>Обслуживание</td><td id="12"></td></tr>
+    <tr><td>Интерьер</td><td id="13"></td></tr>
+    <tr><td>Цена</td><td id="14"></td></tr>
+   <tr><td>Оценка</td><td id="15"></td></tr>
+     <tr><td>Блюдо повора</td><td id="16"></td></tr>
+  <tr><td>Блюдо повора<text  id="6"></text></td><td id="7"></td></tr>
+    <tr><td>Пожелания</td><td id="18"></td></tr>
+   </table>-->
+</body>

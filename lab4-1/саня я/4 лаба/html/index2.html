@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title></title>
+  <meta charset="utf-8">
+<link href="../css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function OnLoad() {
+            var paramValue = window.location.href.split("?")[1].split("=")[1].split("$");
+            console.log(localStorage["mas2"]);
+            document.getElementById("1").innerHTML = '<p>' +   paramValue[0] + '</p>';
+            document.getElementById("2").innerHTML = '<p>' +  paramValue[1] + '</p>';
+            document.getElementById("3").innerHTML = '<p>' + paramValue[2] + '</p>';
+            document.getElementById("4").innerHTML = '<p>' + paramValue[3] + '</p>';
+            document.getElementById("5").innerHTML = '<p>' + paramValue[4] + '</p>';
+            document.getElementById("6").innerHTML = '<p>' + paramValue[5] + '</p>';
+            console.log(paramValue);
+        }
+    </script>
+</head>
+<body onload="OnLoad()">
+    <span id="storageElement"></span>
+    <font id="UsName"></font>
+    <font id="myName">
+    </font>
+    <table>
+        <tr id="header">
+            <td>Name</td>
+            <td>Information</td>
+            <td>Mail</td>
+            <td>Operation</td>
+            <td>Terms</td>
+            <td>Answer</td>
+        </tr>
+        <tr>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+        </tr>
+    </table>
+</body>
+    </html>

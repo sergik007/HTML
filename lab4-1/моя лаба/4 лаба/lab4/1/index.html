@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lab #4.1</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<body>
+	<script src="sk.js"></script>
+		<div id="main">
+		<form onsubmit="alert('Форма отправлена'); GetVote(); return false;">
+			<h1>Выставка мобильных телефонов</h1>
+
+			<label for="login">
+			Логин : <br>
+			</label>
+            <input type="email" id="login" maxlength="20" autofocus required>
+			<br><br>
+
+			<label>
+            Пароль : <br>
+            <input type="password" id="password" maxlength="20" required>
+            </label>
+            <hr>
+
+			<label>
+            <input type="checkbox" id="check">Регистрировались ли вы заранее?<br>
+            </label>
+            <hr>
+
+            <p>Какая модель телефона вам понравилась больше всего?</p>
+            <select id="select">
+                <option disabled>Выберите телефон</option>
+                <option selecter>Rage Evo</option>
+                <option>Wileyfox Swift 2</option>
+                <option>Huawei Mate 9</option>
+                <option>Lenovo A Plus</option>
+                <option>Iphone 7</option>
+                <option>Samsung Galaxy S7</option>
+            </select><br>
+            <hr>
+
+            <p>Какой маркой телефона вы пользуетесь?</p>
+            <label><input type="radio" name="mark" value="Xiaomi">Xiaomi</label><br>
+            <label><input type="radio" name="mark" value="Samsung">Samsung</label><br>
+            <label><input type="radio" name="mark" value="Huawei">Huawei</label><br>
+            <label><input type="radio" name="mark" value="Apple">Apple</label><br>
+            <label><input type="radio" name="mark" value="Lenovo">Lenovo</label><br>
+            <label><input type="radio" name="mark" value="Sony">Sony</label><br>
+            <label><input type="radio" name="mark" value="MEIZU">MEIZU</label><br>
+            <label><input type="radio" name="mark" value="HTC">HTC</label><br>
+            <label><input type="radio" name="mark" value="Другой" checked>Другой / никакой</label><br><br>
+            <hr><br>
+
+            <textarea id="comment" rows="10" cols="48" placeholder="Выши впечатления от мероприятия..."></textarea><br><br>
+            <hr>
+
+            <p><input type="submit" value="Отправить" class="but" onclick=""></p>
+
+            <p><input type="button" value="Показать" class="but" onclick="Print()"></p>
+
+            <p><input type="reset" value="Очистить" class="but"></p>
+		</form>
+		</div>
+
+	<body>
+</html>

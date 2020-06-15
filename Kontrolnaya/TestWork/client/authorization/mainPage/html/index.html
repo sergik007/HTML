@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+<form>
+<h1>Batmam</h1>
+     <div class="container">
+    	<input type="get" value="С чего же все началось" onClick='location.href="http://localhost:3002/history/"'>
+    	<input type="get" value="Фильмография" onClick='location.href="http://localhost:3002/filmsPage/"'>
+    	<input type="get" value="Сериалы" onClick='location.href="http://localhost:3002/shows/"'>
+    </div>
+    <br>
+	<div class="audio">
+	<p></p><br><br>
+  <div id="aud">
+    Саундтрек из последнего фильма о бетмене :
+  	<audio controls>
+   		<source src="./resources/sherlock.ogg" type="audio/ogg; codecs=vorbis">
+   		<source src="./resources/OST_Betmen_-_Temnyj_rycar_(xMusic.me).mp3" type="audio/mpeg">
+   		Воспроизведение композиции, к сожалению, невозможно в данном браузере. 
+    	<a href="./resources/sherlock.mp3">Скачать</a>.
+  	</audio>
+  </div>
+  	</div>
+    </form>
+</body>
+</html>

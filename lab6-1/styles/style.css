@@ -1,0 +1,44 @@
+body{
+    background-color: azure;
+}
+
+div#text{
+    border: 1px solid sienna;
+    width: 50%;
+    padding: 1%;
+    margin: 2.5%;
+    float: left;
+}
+p{
+    margin: 2%;
+}
+
+p#hide:hover{
+    cursor: pointer;
+    color: coral;
+}
+div#imgs{
+    border: 2px solid silver;
+    float: right;
+    width: 40%;
+    margin:2.5%;
+}
+
+.imgs{
+    margin-left: 12%;
+    margin-top: 5%;
+}
+.imgs:last-child{
+    margin-bottom: 5%;
+    color:magenta
+}
+
+.form-group{
+    width: 15%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+button{
+    margin: 3%;
+}

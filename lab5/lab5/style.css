@@ -1,0 +1,27 @@
+body{
+  background-color: chartreuse;
+}
+
+li{
+  float: left;
+  list-style: none;
+  padding: 5px;
+  background-color: yellow;
+  border: 2px dotted;
+  
+}
+li:hover{
+  background-color: darkgreen;
+}
+ul{
+  margin: auto;
+}
+#button{
+  clear: both;
+}
+#pole{
+}
+
+#last{
+  display: none;
+}

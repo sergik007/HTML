@@ -1,0 +1,63 @@
+body{
+    font-family:gabriola;
+    font-size:18pt;  background-repeat:no-repeat;
+    background-position:top;
+    background-color: darkolivegreen;
+    padding:0;
+    margin:0;
+    background-size: cover;
+    height: 600px;
+    background-image: url('train.png');
+}
+
+main{
+    position:relative;
+    width:50%;
+    min-height:100%;
+    margin:auto;
+    text-align: center;
+    padding: 2% 0 5% 0;
+    margin-bottom: 0;
+    <!--background-color: cornflowerblue;-->
+    opacity:0.7;
+}
+table {
+    background-color: inherit;
+    border-collapse:collapse;
+    height:150px;
+    width: 100%;
+    font-family: Gabriola;
+    font-weight: bold;
+    text-align: center;
+
+}
+table,th,td
+{
+    border-style: groove;
+    border-width:3px;
+    border-collapse:collapse;
+    border-color: darkgreen;
+}
+tr{
+    height: 40px;
+    width: 80%;
+}
+td{
+    height: 20px;
+    width: 30%;
+}
+button[type=button] {
+    margin-top:0px;
+    margin-left:3px;
+    margin-right:3px;
+    padding:5px 15px;
+    font-size:80%;
+    background:#E4E9E8;
+    border:0 none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.image{
+ height: 300px;
+    width: 200px;
+}

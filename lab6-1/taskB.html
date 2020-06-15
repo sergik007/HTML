@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Работа с jQuery</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/manual.css" />
+        <link rel="stylesheet" href="styles/taskB.css" />
+
+        <script src="bootstrap-3.3.7-dist\js\jquery-3.1.0.min.js"></script>
+        <script src="scripts/taskB.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    </head> 
+    <body>
+        <div id="main">
+            
+                <div id="field1" class="form-group">
+                        <div class="col-sm-10">
+                            <input type="text" style="width:30%" class="form-control"  id="fl1" maxlength="50" placeholder="Введите текст в четвертое поле"  required>          
+                            <span id="for1">Поле не заполнено</span>
+                        </div>
+                </div>
+
+                <div id="field2" class="form-group">
+                        <div class="col-sm-10">
+                            <input type="text" style="width:30%" class="form-control"  id="fl2" maxlength="50" placeholder="Введите текст в четвертое поле"  required>
+                            <span id="for2">Поле не заполнено</span>
+                        </div>
+                </div>
+
+                <div id="field3" class="form-group">
+                        <div class="col-sm-10">
+                            <input type="text" style="width:30%" class="form-control"  id="fl3" maxlength="50" placeholder="Введите текст в четвертое поле"  required>
+                            <span id="for3" >Поле не заполнено</span>
+                        </div>
+                </div>
+
+                    <div id="radio" class="col-sm-10">
+                        <label class="radio-inline"><input type="radio" value="yellow" name="optradio">Yellow</label>
+                        <label class="radio-inline"><input type="radio" value="green" name="optradio">Green</label>
+                        <label class="radio-inline"><input type="radio" value="blue" checked name="optradio">Blue</label>
+                    </div> 
+                
+                <div id="buttons" class="form-group">
+                        <div class="col-sm-10">
+                           <button id="loadXML" class="btn btn-primary">Load XML</button>
+                            <button id="LoadScript"  class="btn btn-primary">Load Script</button>
+                            <button id="Show"  class="btn btn-primary" disabled >Show Ages</button>
+                        </div>
+                </div>
+
+            
+
+        </div>
+            
+    </body>
+    
+</html>

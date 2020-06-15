@@ -1,0 +1,168 @@
+@import url(http://allfont.ru/css/?fonts=avantgardectt);
+body{
+display: block;
+min-height: 100%;
+background: url(bg.jpg) center center no-repeat;
+margin: 0;
+}
+div#block {
+	display:block;
+	margin: 0px auto;
+}
+.h1 {
+display:block;
+margin: 0px auto;
+position:relative;
+text-align: center;
+color: orange;
+}
+
+#t2 {
+display:block;
+margin: 0px auto;
+position:relative;
+text-align: center;
+color: blue;
+font-style: italic;
+}
+#t1 {
+display:block;
+margin: 0px auto;
+position:relative;
+text-align: center;
+color: blue;
+font-style: normal;
+}
+#t4 {
+display:block;
+margin: 0px auto;
+position:relative;
+text-align: center;
+color: red;
+font-style: italic;
+}
+#t3 {
+display:block;
+margin: 0px auto;
+position:relative;
+text-align: center;
+color: red;
+font-style: normal;
+}
+
+#img1 
+{
+display:inline-block;
+
+position:relative;
+z-index:100;
+width:1400px;
+background: url(1.jpg) center center;
+max-width:1200px;
+height:1000px;
+
+}
+#img2
+{
+display:inline-block;
+
+position:relative;
+z-index:100;
+width:1400px;
+background: url(2.jpg) center center;
+max-width:1200px;
+height:1000px;
+}
+#img3
+{
+display:inline-block;
+
+position:relative;
+z-index:100;
+width:1000px;
+background: url(3.jpg) center center;
+max-width:960px;
+height:800px;
+
+}
+#img4
+{
+display:inline-block;
+
+position:relative;
+z-index:100;
+width:1000px;
+background: url(4.jpg) center center;
+max-width:960px;
+height:800px;
+
+}
+#img5
+{
+display:inline-block;
+
+position:relative;
+z-index:100;
+width:1000px;
+background: url(5.jpg) center center;
+max-width:960px;
+height:800px;
+
+}
+
+
+form, #main {
+	display: block;
+	position: relative;
+	width: 400px;
+	background-color: none;
+	border-radius: 7px;
+	border: 0px solid #99d8d3; 
+	box-shadow:  0 0px 5px #bde4ff;
+	-moz-box-shadow: 0 0 5px #bde4ff;
+	padding:10px;
+	margin:10px auto 5px;
+	font-family: 'AvantGardeCTT', arial;
+	text-align: center;
+
+}
+input, select {
+	display: block;
+    width:  205px;
+	height: 30px;
+    padding: 5px 10px 5px 10px;
+    border:1px solid  white;
+	border-radius:5px;
+	border: 1px solid ;
+	box-shadow:  0 0px 7px gray inset;
+	-moz-box-shadow: 0 0 7px gray;
+    font-size:15px;
+    font-family: Arial;
+	margin: 3px auto;
+}
+select {
+    height: none; 
+	padding: 0 10px 0 10px;;
+}
+select:focus, input:focus{
+outline:none;
+}
+input.button {
+    width:  250px;
+    height: 30px;
+	background-color: purple;
+	font-family: 'AvantGardeCTT', arial;
+	font-weight: bold;
+	color: orange;
+	font-size: 1em;
+	margin: 15px auto 5px;
+}
+input.button:hover {
+	background-color: red;
+}
+
+
+.normal {
+	font-weight: normal;
+	color: black;
+}
